@@ -1,0 +1,39 @@
+
+.horse {
+    width: 0px;
+    height: 0px;
+    border: 35px solid;
+    border-right-width: 30px;
+    position: relative;
+    top: 20px; /*опускаем треугольник*/
+    left: 10px;
+}
+.horse::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    top: -25px;
+    left: -35px;
+    transform: rotate(-10deg);
+}
+.horse::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    position: relative;
+    top: -68px;
+    left: 0px; 
+}
+
+.horse.colorWhite {border-color: transparent white white transparent; /*Создаем треугольник. Для этого у квадрата делаем прозрачным верх и левую сторону*/}
+.horse.colorWhite::before {background-color: white;}
+.horse.colorWhite::after {border-color: transparent white white transparent;}
+
+.horse.colorBlack {border-color: transparent black black transparent; /*Создаем треугольник. Для этого у квадрата делаем прозрачным верх и левую сторону*/}
+.horse.colorBlack::before {background-color: black;}
+.horse.colorBlack::after {border-color: transparent black black transparent;}

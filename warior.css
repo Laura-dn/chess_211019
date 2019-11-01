@@ -1,0 +1,51 @@
+.warior {
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-radius: 30px;
+    position: relative;
+    border-radius: 500em 500em 0 0;/*"Отрезаем" нижнюю часть овала*/
+    top: 45px;
+    left: 28px;
+}
+
+.warior::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: solid;
+    border-radius: 30px;
+    position: relative;
+    top: -20px;
+    left: 5px;
+}
+
+.warior::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid;
+    border-radius: 30px;
+    position: relative;
+    top: -64px;
+    left: 13px;
+}
+
+.warior.colorWhite {
+    background-color: white;
+    border: solid white;
+}
+.warior.colorWhite::before {
+    background-color: white;
+    border: solid white;
+}
+.warior.colorWhite::after {
+    background-color: white;
+    border: solid white;
+}
+
+.warior.colorBlack {background-color: black;}
+.warior.colorBlack::before {background-color: black;}
+.warior.colorBlack::after {background-color: black;}

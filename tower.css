@@ -1,0 +1,49 @@
+.tower {
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.tower::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 10px;
+    border: solid;
+    position: relative;
+    top: 20px;
+    left: -23px;
+}
+
+.tower::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid;
+    position: relative;
+    top: -5px;
+    left: -8px;
+    
+}
+
+.tower.colorWhite {border-bottom: 80px solid white;}
+.tower.colorWhite::before {
+    border-color: transparent transparent white white;
+    background-color:white;
+}
+.tower.colorWhite::after {background-color: white;
+    border: solid white;
+}
+
+.tower.colorBlack {border-bottom: 80px solid black;}
+.tower.colorBlack::before {
+    background-color: black;
+    border-color: transparent transparent black black;}
+.tower.colorBlack::after {
+    background-color: black; 
+}

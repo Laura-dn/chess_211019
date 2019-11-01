@@ -1,0 +1,10 @@
+td {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+}
+.black {background-color: chocolate;}
+
+.white {background-color: rgb(180, 180, 82);}

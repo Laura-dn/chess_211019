@@ -1,0 +1,50 @@
+.king {
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.king::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border: solid;
+    position: relative;
+    top: 20px;
+    left: -23px;
+    margin-bottom: 5px;
+}
+
+.king::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    border: solid;
+    position: relative;
+    top: 20px;
+    left: -32px;
+    margin-top: 3px;
+}
+
+.king.colorWhite {border-bottom: 80px solid white;}
+.king.colorWhite::before {
+    background-color:  white;
+    border-color: transparent transparent  white  white;}
+.king.colorWhite::after {
+    background-color:  white;
+    border: solid white; 
+}
+
+.king.colorBlack {border-bottom: 80px solid black;}
+.king.colorBlack::before {
+    background-color: black;
+    border-color: transparent transparent black black;}
+.king.colorBlack::after {
+    background-color: black; 
+}
+
